@@ -6,9 +6,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <div style={{color: "aqua"}}>
                 <InputForm defaultValue={'hello form'}/>
-                </div>
             </header>
         </div>
     );

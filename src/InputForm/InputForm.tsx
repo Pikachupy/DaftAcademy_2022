@@ -1,13 +1,13 @@
 import {useState, useEffect, useCallback} from "react";
 
 interface InputFormProps {
-    defaultValue?: string;      //interfejs do przejmowania danych
+    defaultValue?: string;
 }
 
 const storageFormKey = 'inputValue';
 
 
-export const InputForm = (props?: InputFormProps) => {      //eksportujemy inputforma; w index.ts jeszcze
+export const InputForm = (props?: InputFormProps) => {
     const [displayError, setDisplayError] = useState<boolean>(false)
     const [inputValue, setInputValue] = useState<string>('pusta wartość')
     const [errorMessage, setErrorMessage] = useState<string>('')
@@ -19,11 +19,11 @@ export const InputForm = (props?: InputFormProps) => {      //eksportujemy input
         setInputValue(event.target.value);
         if (messageLength < 3 || messageLength > 20) {
             if (messageLength < 3) {
-                setErrorMessage('User name is too short')
+                setErrorMessage('User name are to short')
             }
 
             if (messageLength > 20) {
-                setErrorMessage('User name is too long')
+                setErrorMessage('User name are to long')
             }
 
             setDisplayError(true)
