@@ -7,7 +7,7 @@ function App() {
         <div className="App">
             <header className="App-header">
                 <div color="green">
-                <InputForm defaultValue={'hello form'}/>
+                <InputForm defaultValue={'Yes because its big'}/>
                 </div>
             </header>
         </div>
