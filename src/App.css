@@ -14,7 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('https://i.ibb.co/xMTNmS0/acc.jpg');
+  background-size: cover;
+  height: 600px;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
