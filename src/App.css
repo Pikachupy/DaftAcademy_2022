@@ -12,7 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+@media (prefers-reduced-motion: no-preference) {
 .App-header {
   background-image: url("acc.jpg");
   background-size: cover;
@@ -26,7 +26,7 @@
   font-size: calc(60px + 2vmin);
   color: white;
 }
-
+}
 .App-link {
   color: #61dafb;
 }
