@@ -5,7 +5,11 @@ import {InputForm} from "./InputForm";
 import {PolicyPage} from "./policy";
 
 export const routesPaths = {
-    about: 'about'
+    home: '/',
+    about: 'about',
+    form: 'form',
+    policy: 'policy'
+
 }
 
 function App() {
@@ -23,11 +27,11 @@ function App() {
                 </div>
             </div>
             <Routes>
-                <Route path='/' element={<InputForm defaultValue={'Hello there!'}/>}/>
-                <Route path='*' element={<div>404</div>}/>
+                <Route path={`/${routesPaths.home}`} element={<InputForm defaultValue={'Hello there!'}/>}/>
+                <Route path='*' element={<div>Error 404: you lost! </div>}/>
                 <Route path={`/${routesPaths.about}`} element={<div>About</div>}/>
-                <Route path='/policy' element={<PolicyPage/>}/>
-                <Route path='/form' element={<div>Form</div>}/>
+                <Route path={`/${routesPaths.policy}`} element={<PolicyPage/>}/>
+                <Route path={`/${routesPaths.form}`} element={<div>Form</div>}/>
             </Routes>
         </div>
     );
