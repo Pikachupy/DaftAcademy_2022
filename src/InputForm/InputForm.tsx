@@ -19,11 +19,19 @@ export const InputForm = (props?: InputFormProps) => {
         setInputValue(event.target.value);
         if (messageLength < 3 || messageLength > 20) {
             if (messageLength < 3) {
+
                 setErrorMessage('User name is too short')
             }
 
             if (messageLength > 20) {
                 setErrorMessage('User name is too long')
+
+                setErrorMessage('User name are to short')
+            }
+
+            if (messageLength > 20) {
+                setErrorMessage('User name are to long')
+
             }
 
             setDisplayError(true)
