@@ -20,7 +20,7 @@ export const Navigation = () => {
             <Link className='App-link' to={'/'}>Home</Link>
             <Link className='App-link' to={`/${routesPaths.about}`}>About</Link>
             <Link className='App-link' to={'/form'}>Form</Link>
-            <Link className='App-link' to={'/policy'}>Policy</Link>
+            <Link className='App-link' to={'/contact'}>Contact</Link>
         </div>}
     </div>
     )
